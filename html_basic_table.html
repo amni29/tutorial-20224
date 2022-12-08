@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HTML Basic Tables</title>
+
+	<style>
+		table, th, tr, td
+		{
+			border: 2px solid red;
+			border-collapse: collapse;
+		
+		}
+		th, td
+		{
+			padding: 3px;
+		}
+		th
+		{
+			background-color: lightpink;
+			color: deeppink;
+		}
+		tr
+		{
+			background-color: beige;
+		}
+
+
+	</style>
+
+</head>
+<body>
+<h2>Basic Table</h2>
+
+
+<table style="width:100%">
+	<caption>This is basic table</caption>
+	<tr>
+		<th>Name</th>
+		<th>Phone Num.</th>
+		<th>Email</th>
+		<th>Address</th>
+	</tr>
+	<tr>
+		<td>Amni Wadie</td>
+		<td>013-3643354</td>
+		<td>amniwadie@gmail.com</td>
+		<td>UiTM Machang</td>
+	</tr>
+	<tr>
+		<td>Wadie Amni</td>
+		<td>013-3643354</td>
+		<td>amniwadie@gmail.com</td>
+		<td><center><img src="images/cat1.jpg" style="width: 50px"/center></td>
+	</tr>
+
+
+</table>
+
+<p></p>
+
+<h2>Customized Size Table</h2>
+
+<table style="width:100%">
+	<caption>This is customized table (table column)</caption>
+	<tr>
+		<th style="width: 40%">Name</th>
+		<th style="width: 10%">Phone Num.</th>
+		<th style="width: 20%">Email</th>
+		<th style="width: 30%">Address</th>
+	</tr>
+	<tr>
+		<td>Amni Wadie</td>
+		<td>013-3643354</td>
+		<td>amniwadie@gmail.com</td>
+		<td>UiTM Machang</td>
+	</tr>
+	<tr>
+		<td>Wadie Amni</td>
+		<td>013-3643354</td>
+		<td>amniwadie@gmail.com</td>
+		<td>Kelantan</td>
+	</tr>
+
+
+</table>
+
+<p></p>
+
+<h2>Customized Size Table</h2>
+
+<table style="width:100%">
+	<caption>This is customized table (table row)</caption>
+	<tr>
+		<th style="width: 40%">Name</th>
+		<th style="width: 10%">Phone Num.</th>
+		<th style="width: 20%">Email</th>
+		<th style="width: 30%">Address</th>
+	</tr>
+	<tr>
+		<td>Amni Wadie</td>
+		<td>013-3643354</td>
+		<td>amniwadie@gmail.com</td>
+		<td>UiTM Machang</td>
+	</tr>
+	<tr style="height: 150px;">
+		<td>Wadie Amni</td>
+		<td>013-3643354</td>
+		<td>amniwadie@gmail.com</td>
+		<td>Kelantan</td>
+	</tr>
+
+
+</table>
+
+<p></p>
+
+<h2>Table ColSpan</h2>
+<table style="width: 100%">
+	<tr>
+		<th>Name</th>
+		<th colspan="2">Subject Code</th>
+	</tr>
+	<tr>
+		<td>Amni</td>
+		<td>IMD311</td>
+		<td>IMD226</td>
+	</tr>
+	<tr>
+		<td>Wadie</td>
+		<td>IMD313</td>
+		<td>IMD227</td>
+	</tr>
+
+</table>
+
+<p></p>
+<h2>Table RowSpan</h2>
+<table>
+	
+	<tr>
+		<th>Name</th>
+		<td>Amni</td>
+	</tr>
+	<tr>
+		<th rowspan="2">Email Address</th>
+		<td>amniwadie@gmail.com</td>
+	</tr>
+	<tr>
+		<td>waide@gmail.com</td>
+	</tr>
+
+
+</table>
+
+</body>
+</html>

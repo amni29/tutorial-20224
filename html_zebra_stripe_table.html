@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HTML Table (Zebra Stripes)</title>
+
+	<style>
+		table, th, tr, td
+		{
+			border: 1px solid red;
+			border-collapse: collapse;
+		
+		}
+		th, td
+		{
+			padding: 2px;
+		}
+		th
+		{
+			background-color: cadetblue;
+		}
+		tr:nth-child(even)
+		{
+			background-color: greenyellow;
+		}
+
+	</style>
+
+</head>
+<body>
+
+
+
+
+<table style="width:100%">
+	<caption>This is basic table</caption>
+	<tr>
+		<th>Name</th>
+		<th>Phone Num.</th>
+		<th>Email</th>
+		<th>Address</th>
+	</tr>
+	<tr>
+		<td>Amni Wadie</td>
+		<td>013-3643354</td>
+		<td>amniwadie@gmail.com</td>
+		<td>UiTM Machang</td>
+	</tr>
+	<tr>
+		<td>Wadie Amni</td>
+		<td>013-3643354</td>
+		<td>amniwadie@gmail.com</td>
+		<td><center><img src="images/cat1.jpg" style="width: 50px"/center></td>
+	</tr>
+	<tr>
+		<td>Wadie Amni</td>
+		<td>013-3643354</td>
+		<td>amniwadie@gmail.com</td>
+		<td>UiTM Machang</td>
+
+
+</table>
+
+
+</body>
+</html>
