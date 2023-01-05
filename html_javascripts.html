@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HTML Javascripts</title>
+</head>
+<body>
+
+	<h1>What Javascript can do</h1>
+
+
+
+	<h3>Change your content</h3>
+
+	<p id="demo1">Javascript can change HTML content</p>
+	<button type="button" onclick='document.getElementById("demo1").innerHTML = "Hello Javascript!"'>Click Here</button>
+
+
+
+	<h3>Change Style</h3>
+	<p id="style1">Javascript can change HTML style</p>
+	<script>
+		function myStyle()
+		{
+			document.getElementById("style1").style.fontSize = "45px";
+			document.getElementById("style1").style.color = "red";
+			document.getElementById("style1").style.backgroundColor = "lightblue";
+			document.getElementById("style1").style.fontFamily = "Lucida";
+		}
+	</script>
+
+	<button type="button" onclick="myStyle()">Click Me!</button>
+
+
+
+	<h3>Change the value attributes of image (Image Manipulation)</h3>
+	<script>
+		function lampu(a)
+		{
+			var pic;
+			if (a == 0)
+			{
+				pic = "images/bulboff.jpg";
+			}
+			else
+			{
+				pic = "images/bulbon.jpg";
+			}
+			document.getElementById('gambar').src = pic;
+		}
+	</script>
+
+	<img src="images/bulboff.jpg" id="gambar" width="100" height="200">
+
+	<p>
+		<button type="button" onclick="lampu(1)">Light ON</button>
+		<button type="button" onclick="lampu(0)">Light OFF</button>
+	</p>
+
+
+	<h3>Popup Window</h3>
+
+<h4>Alert Box</h4>
+	<p>This is using alert box function</p>
+	<button onclick="myAlertBox()">Click HERE!</button>
+
+	<script>
+		function myAlertBox()
+		{
+			alert("This is alert box!")
+		}
+	</script>
+
+<h4>Alert Box (text dia ats bawah)</h4>
+	<p>This is using alert box function</p>
+	<button onclick="myAlertBox()">Click HERE!</button>
+
+	<script>
+		function myAlertBox()
+		{
+			alert("Assalamualaikum\nThis is alert box!")
+		}
+	</script>
+
+
+
+	<h4>Confirm Box</h4>
+	<p>This is using confirm box function</p>
+	<button onclick="myconfirmation()">Submit Here</button>
+
+	<p id="demo2"></p>
+
+	<script>
+		function myconfirmation()
+		{
+			var b;
+			if (confirm("Press the button!"))
+			{
+				b = "You pressed OK!";
+			}
+			else
+			{
+				b = "You pressed Cancel!";
+			}
+			document.getElementById("demo2").innerHTML = b;
+		}
+	</script>
+
+
+
+	<h4>Prompt Function</h4>
+	<p>This is using prompt function - where user enter value</p>
+	<button onclick="myPrompt()">Tekan Disini!</button>
+
+	<p id="prompt1"></p>
+
+	<script>
+		function myPrompt()
+		{
+			let text;
+			let person = prompt("Please enter your name:", "Amni");
+			if (person == null || person == "")
+			{
+				text = "User cancelled the prompt";
+			}
+			else
+			{
+				text = "Hello " + person + ", How are you today?";
+			}
+			document.getElementById("prompt1").innerHTML = text;
+		}
+	</script>
+
+
+
+
+</body>
+</html>
